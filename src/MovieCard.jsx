@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
+const MovieCard = ({ movie:{imdbID,Year,Poster,Title,Type}}) => {
   return (
     <div className="movie" key={imdbID}>
       <div>
@@ -17,6 +17,6 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
       </div>
     </div>
   );
-}
+};
 
 export default MovieCard;
